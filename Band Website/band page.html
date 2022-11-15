@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssfile.css">
+    <script src="https://kit.fontawesome.com/60f0166554.js" crossorigin="anonymous"></script>
+    <title>MyBand</title>
+</head>
+
+<body>
+    <!--------------------------------HOMEPAGE---------------------------------------------->
+    <section class="homepage section" id="home">
+        <nav class="navbar">
+            <ul>
+                <a href="#home">HOME</a>
+                <a href="#band">BAND</a>
+                <a href="#tour">TOUR</a>
+                <a href="#contact">CONTACT</a>
+                <div class="dropdown">
+                    <a href="">MORE <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li class="dropdown-content-item">Merchandise</li>
+                            <li class="dropdown-content-item">Media</li>
+                            <li class="dropdown-content-item">Extras</li>
+                        </ul>
+                    </div>
+            </ul>
+        <!-- <i class="fas fa-search search"></i> -->
+        </nav>
+        <div class="homepage-description">
+            <span class="homepage-desc-heading">India</span>
+            <p class="homepage-desc-para">Thank You India - A night we won't forget.</p>
+        </div>
+    </section>
+
+    <!---------------------------------------BAND---------------------------------------------------------------------------------->
+    <section class="band" id="band">
+        <div class="container">
+            <p class="heading">THE BAND</p>
+            <i class="band-heading-desc"> We love music</i>
+            <p class="band-para">Music is an art that, in one guise or another, 
+                permeates every human society. Modern music is heard in a bewildering profusion of styles, 
+                many of them contemporary, others engendered in past eras. Music is a protean art; 
+                it lends itself easily to alliances with words, as in song, and with physical movement, as in dance. 
+                Throughout history, music has been an important adjunct to ritual and drama and 
+                has been credited with the capacity to reflect and influence human emotion.
+            </p>
+            <div class="band-image-collection">
+                <div class="band-image">
+                    <span class="member-name">Mickey Jones</span>
+                    <img src="images/member3.jpg" alt="member1" height="180" width="180">
+                </div>
+                <div class="band-image">
+                    <span class="member-name">Garth Hudson</span>
+                    <img src="images/member1.jpg" alt="member1" height="180" width="180">
+                </div>
+                <div class="band-image">
+                    <span class="member-name">Aphex Twin</span>
+                    <img src="images/member4.jpg" alt="member1" height="180" width="180">
+                </div>
+                <div class="band-image">
+                    <span class="member-name">Elton John</span>
+                    <img src="images/member2.jpg" alt="member1" height="180" width="180">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------------------TOUR--------------------------------------------------------------------------------------------------->
+    <section class="tour section" id="tour">
+        <div class="container">
+            <p class="heading tour-heading">TOUR DATES</p>
+            <i class="tour-block-desc">Remember to book your tickets!</i>
+            <br>
+            <div class="tour-block-white-div">
+                <p class="month">November</p>
+                <button class="red-button">Sold Out</button>
+            </div>
+            <hr class="hr">
+            <div class="tour-block-white-div">
+                <p class="month">December</p>
+                <button class="red-button">Sold Out</button>
+            </div>
+            <hr class="hr">
+            <div class="tour-block-white-div">
+                <p class="month">January</p>
+                <button class="green-button">Still Live</button>
+            </div>
+    <!----------------IMAGE CARDS---------------------->
+            <div class="tour-img-container">
+                <div class="tour-img-card">
+                    <img src="images/Hyderabad.jpg" alt="new york" height="200" width="240">
+                    <p class="tour-image-card-heading">Hyderabad</p>
+                    <p class="tour-image-card-date">Fri 27 Nov 2022</p>
+                    <p class="tour-image-card-desc">Heart Cup Coffee, Gandipet.</p>
+                    <button class="tour-button button">Buy Tickets</button>
+                </div>
+
+                <div class="tour-img-card">
+                    <img src="images/Mumbai.jpg" alt="new york" height="200" width="240">
+                    <p class="tour-image-card-heading">Mumbai</p>
+                    <p class="tour-image-card-date">Sat 14 Dec 2022</p>
+                    <p class="tour-image-card-desc">Phoenix Palladium, Lower Parel.</p>
+                    <button class="tour-button button">Buy Tickets</button>
+                </div>
+
+                <div class="tour-img-card">
+                    <img src="images/Jaipur.jpg" alt="new york" height="200" width="240">
+                    <p class="tour-image-card-heading">Jaipur</p>
+                    <p class="tour-image-card-date">Sun 30 Jan 2023</p>
+                    <p class="tour-image-card-desc">G Club, Days Hotel, Wyndham Tonk.</p>
+                    <button class="tour-button button">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------MODAL--------------------------------------------------->
+    <div id="modal">
+        <div class="modal-heading-container">
+            <p class="modal-heading heading"><i class="fas fa-suitcase"></i>Tickets</p>
+        </div>
+        <div class="modal-input">
+            <label for="modal-input-people"><i class="fas fa-shopping-cart"></i>Tickets,Rs.1500 per person</label>
+            <input type="text" id="modal-input-people" placeholder="How many?">
+        </div>
+        <div class="modal-input">
+            <label for="modal-input-email"><i class="fas fa-user"></i>Send To</label>
+            <input type="email" id="modal-input-email" placeholder="Enter Email">
+        </div>
+        <div class="modal-input">
+            <button class="modal-pay-button"><i class="fas fa-check"></i>PAY</button>
+        </div>
+       <div class="modal-footer">
+           <button class="modal-close-button">Close<i class="fas fa-times"></i></button>
+           <p class="modal-footer-p" style="margin-right:20px;">Need help?</p>
+       </div>
+    </div>
+<!------------------------------------------CONTACT-------------------------------------------------------------------------------------->
+    <section class="contact" id="contact">
+        <div class="container">
+            <p class="heading">CONTACT</p>
+            <i class="contact-desc">Fan? Take time to Drop a note!</i>
+            <div class="contact-flex">
+                <div class="contact-address">
+                    <p>Hyderabad, India</p>
+                    <p>Phone:+91 9876543210</p>
+                    <p>Email: myband@mail.com</p>
+                </div>
+                <div class="contact-input">
+                    <div class="contact-name-email">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="contact-message">
+                        <input type="text" placeholder="Message">
+                    </div>
+                    <div class="contact-button-class">
+                        <button class="button">
+                            SEND
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-----------------------------------------------------MAP-------------------------------------------------------------------------------> 
+    <section class="section" id="map">
+        
+    </section>
+    
+<!--------------------------------------------FOOTER------------------------------------------------------------------------------------->
+    <section class="footer">
+        <div class="icon">
+
+        </div>
+        <p class="footer-desc">
+            Made by Vijay Kancharla
+        </p>
+    </section>
+    <script src="jsfile.js"></script>
+</body>
+
+</html>
